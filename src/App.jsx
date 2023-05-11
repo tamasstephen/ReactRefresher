@@ -1,12 +1,12 @@
 import { createRoot } from "react-dom/client";
 import SearchParams from "./SearchParams";
-import Navigation from "./Navigation";
+import Root from "./Root";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Details from "./Details";
 
 const router = createBrowserRouter([
   {
-    element: <Navigation />,
+    element: <Root />,
     children: [
       {
         path: "/",
