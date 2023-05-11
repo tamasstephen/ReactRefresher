@@ -1,16 +1,12 @@
 import { createRoot } from "react-dom/client";
 import SearchParams from "./SearchParams";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Navigation from "./Navigation";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Details from "./Details";
 
 const router = createBrowserRouter([
   {
-    element: (
-      <>
-        <h1>Adopt me!</h1>
-        <Outlet />
-      </>
-    ),
+    element: <Navigation />,
     children: [
       {
         path: "/",
