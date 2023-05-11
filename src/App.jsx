@@ -1,8 +1,8 @@
 import { createRoot } from "react-dom/client";
-import SearchParams from "./SearchParams";
+import SearchParams from "./components/SearchParams";
 import Root from "./Root";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Details from "./Details";
+import Details from "./components/Details";
 
 const router = createBrowserRouter([
   {
